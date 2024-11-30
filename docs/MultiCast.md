@@ -33,7 +33,7 @@ To use this library, you need to have:
 In your bot’s code, import and initialize the `Bot` Class.
 
 ```typescript
-const arabtools = require("sphinx-tools");
+const sphinxtools = require("sphinx-tools");
 
 // Create a new Discord clients
 const client = new Discord.Client({intents:["Guilds", "GuildMembers", "GuildMessages","MessageContent"]});
@@ -43,7 +43,7 @@ const client1 = new Discord.Client({intents:["Guilds", "GuildMembers", "GuildMes
 const client2 = new Discord.Client({intents:["Guilds", "GuildMembers", "GuildMessages","MessageContent"]});
 
 // Create a new class bot
-const Bot = new arabtools.bot(client);
+const Bot = new sphinxtools.bot(client);
 ```
 # Start MultiCast
 

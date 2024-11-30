@@ -34,26 +34,26 @@ To use this library, you need to have:
 In your bot’s code, import and initialize the `Quran` class.
 
 ```typescript
-const arabtools = require("arabtools");
+const sphinxtools = require("sphinxtools");
 
 const client = new Discord.Client({intents:["Guilds", "GuildMembers", "GuildMessages","MessageContent"]});
 // Create a new Quran player instance
-const arabtools = new arabtools.bot(client)
+const sphinxtools = new sphinxtools.bot(client)
 ```
 # Play a Sura
 To play a sura by its name or number, use the `play` method. This will automatically fetch the corresponding audio and play it in the provided voice connection.
 ```typescript
 // Play a sura by name
-await arabtools.quran.play("Al-Fatiha", voiceConnection);
+await sphinxtools.quran.play("Al-Fatiha", voiceConnection);
 
 // Play a sura by number
-await arabtools.quran.play(1, voiceConnection);
+await sphinxtools.quran.play(1, voiceConnection);
 
 //Play a sura by a stringified number
-await arabtools.quran.play('1', voiceConnection)
+await sphinxtools.quran.play('1', voiceConnection)
 
 //Play a sura by the arabic name
-await arabtools.quran.play('الفاتحة', voiceConnection)
+await sphinxtools.quran.play('الفاتحة', voiceConnection)
 ```
 # Stop the Playback
 To stop the audio playback and disconnect from the voice channel, use the `stop` method:

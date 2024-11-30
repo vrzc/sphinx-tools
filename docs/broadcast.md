@@ -33,13 +33,13 @@ To use this library, you need to have:
 In your bot’s code, import and initialize the `Bot` Class.
 
 ```typescript
-const arabtools = require("sphinx-tools");
+const sphinxtools = require("sphinx-tools");
 
 // Create a new Discord client
 const client = new Discord.Client({intents:["Guilds", "GuildMembers", "GuildMessages","MessageContent"]});
 
 // Create a new class bot
-const Bot = new arabtools.bot(client);
+const Bot = new sphinxtools.bot(client);
 ```
 # Start Broadcast
 

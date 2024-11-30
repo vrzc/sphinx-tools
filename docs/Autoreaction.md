@@ -34,14 +34,14 @@ To use this library, you need to have:
 In your bot’s code, import and initialize the `User` Class.
 
 ```typescript
-const arabtools = require("sphinx-tools");
+const sphinxtools = require("sphinx-tools");
 
 const { Client } = require('discord.js-selfbot-v13'); // works with any library that uses discord.js-like syntax;
 
 const client = new Discord.Client();
 
 // Create a new class bot
-const Bot = new arabtools.user(client);
+const Bot = new sphinxtools.user(client);
 ```
 # Start Autoreaction
 

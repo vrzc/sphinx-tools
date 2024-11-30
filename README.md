@@ -70,14 +70,14 @@ To use this library, you need to have:
 In your bot’s code, import and initialize the `User` Class.
 
 ```typescript
-const arabtools = require("sphinx-tools");
+const sphinxtools = require("sphinx-tools");
 
 const { Client } = require('discord.js-selfbot-v13'); // works with any library that uses discord.js-like syntax;
 
 const client = new Client();
 
 // Create a new class bot
-const Bot = new arabtools.user(client);
+const Bot = new sphinxtools.user(client);
 ```
 # Start Autoreaction
 
@@ -149,14 +149,14 @@ To use this library, you need to have:
 In your bot’s code, import and initialize the `User` Class.
 
 ```typescript
-const arabtools = require("sphinx-tools");
+const sphinxtools = require("sphinx-tools");
 
 const { Client } = require('discord.js-selfbot-v13'); // works with any library that uses discord.js-like syntax;
 
 const client = new Client();
 
 // Create a new class bot
-const Bot = new arabtools.user(client);
+const Bot = new sphinxtools.user(client);
 ```
 # Start Auto Leveling
 
@@ -218,14 +218,14 @@ To use this library, you need to have:
 In your bot’s code, import and initialize the `User` Class.
 
 ```typescript
-const arabtools = require("sphinx-tools");
+const sphinxtools = require("sphinx-tools");
 
 const { Client } = require('discord.js-selfbot-v13'); // works with any library that uses discord.js-like syntax;
 
 const client = new Client();
 
 
-const Bot = new arabtools.user(client);
+const Bot = new sphinxtools.user(client);
 ```
 # Start VoiceStay
 
@@ -275,13 +275,13 @@ To use this library, you need to have:
 In your bot’s code, import and initialize the `Bot` Class.
 
 ```typescript
-const arabtools = require("sphinx-tools");
+const sphinxtools = require("sphinx-tools");
 
 // Create a new Discord client
 const client = new Discord.Client({intents:["Guilds", "GuildMembers", "GuildMessages","MessageContent"]});
 
 // Create a new class bot
-const Bot = new arabtools.bot(client);
+const Bot = new sphinxtools.bot(client);
 ```
 # Start Broadcast
 
@@ -340,7 +340,7 @@ To use this library, you need to have:
 In your bot’s code, import and initialize the `Bot` Class.
 
 ```typescript
-const arabtools = require("sphinx-tools");
+const sphinxtools = require("sphinx-tools");
 
 // Create a new Discord clients
 const client = new Discord.Client({intents:["Guilds", "GuildMembers", "GuildMessages","MessageContent"]});
@@ -350,7 +350,7 @@ const client1 = new Discord.Client({intents:["Guilds", "GuildMembers", "GuildMes
 const client2 = new Discord.Client({intents:["Guilds", "GuildMembers", "GuildMessages","MessageContent"]});
 
 // Create a new class bot
-const Bot = new arabtools.bot(client);
+const Bot = new sphinxtools.bot(client);
 ```
 # Start MultiCast
 
@@ -411,53 +411,53 @@ To use this library, you need to have:
 In your bot’s code, import and initialize the `Quran` class.
 
 ```typescript
-const arabtool = require("arabtools");
+const sphinxtool = require("sphinx-tools");
 
 const client = new Discord.Client({intents:["Guilds", "GuildMembers", "GuildMessages","MessageContent"]});
 // Create a new Quran player instance
-const arabtools = new arabtool.bot(client)
+const sphinxtools = new sphinxtool.bot(client)
 ```
 # Play a Sura
 To play a sura by its name or number, use the `play` method. This will automatically fetch the corresponding audio and play it in the provided voice connection.
 ```typescript
 // Play a sura by name
-await arabtools.quran.play("Al-Fatiha", voiceConnection);
+await sphinxtools.quran.play("Al-Fatiha", voiceConnection);
 
 // Play a sura by number
-await arabtools.quran.play(1, voiceConnection);
+await sphinxtools.quran.play(1, voiceConnection);
 
 //Play a sura by a stringified number
-await arabtools.quran.play('1', voiceConnection)
+await sphinxtools.quran.play('1', voiceConnection)
 
 //Play a sura by the arabic name
-await arabtools.quran.play('الفاتحة', voiceConnection)
+await sphinxtools.quran.play('الفاتحة', voiceConnection)
 ```
 # Stop the Playback
 To stop the audio playback and disconnect from the voice channel, use the `stop` method:
 ```typescript
-await arabtools.quran.stop(voiceConnection);
+await sphinxtools.quran.stop(voiceConnection);
 ```
 
 # Get Random Zekr/Ahadith
 Functions that return random zekr/ahadith. you can add more by contributing!
 ```typescript
-arabtools.quran.getRandomZekr()
+sphinxtools.quran.getRandomZekr()
 
-arabtools.quran.getRandomHadith()
+sphinxtools.quran.getRandomHadith()
 ```
 
 # Convert to Hejri Function!
 Just know that this is not 100% accurate, it can be off by a day or so.
 
 ```typescript
-arabtools.quran.convertToHejri(Date.now())
+sphinxtools.quran.convertToHejri(Date.now())
 ```
 
 # Quizes
 This returns a quesiton with 4 answers, 3 wrong and 1 right.
 
 ```typescript
-arabtools.quran.quiz()
+sphinxtools.quran.quiz()
 //output: {name: "question", answers: [{"shuffledAnswers"}]}
 ```
 
