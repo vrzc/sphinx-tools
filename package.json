@@ -1,0 +1,30 @@
+{
+  "name": "sphinx-tools",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["discord-selfbot", "discord selfbot", "discord.js", "broadcast", "multicast", "autoreaction", "quran", "holyquran", "ahadith", "zekr", "sphinx", "sphinx-self", "sphinx-run", "sphinx-bc"],
+  "author": "Sphinx (3yl)",
+  "license": "GPL-3.0-only",
+  "description": "Cool npm module",
+  "homepage": "https://github.com/vrzc/sphinx-tools#readme",
+  "bugs": {
+    "url": "https://github.com/vrzc/sphinx-tools/issues"
+  },
+  "repository": {
+    "url": "https://github.com/vrzc/sphinx-tools/"
+  },
+  "dependencies": {
+    "@discordjs/voice": "^0.17.0",
+    "chalk": "^4.1.2",
+    "discord.js": "^14.15.3",
+    "discord.js-selfbot-v13": "^3.4.2",
+    "ffmpeg-static": "^5.2.0",
+    "libsodium-wrappers": "^0.7.15"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.2"
+  }
+}
