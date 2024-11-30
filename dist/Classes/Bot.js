@@ -32,7 +32,7 @@ class BotRelatedClass extends events_1.default {
     }
     publicNotice() {
         console.log(chalk_1.default.bgRed.white.bold(`\nMake sure to join our discord server for weekly updates!!!\n`) +
-            chalk_1.default.bgBlack.white.bold(`\nJoin our discord server : https://discord.gg/graphicode \n`));
+            chalk_1.default.bgBlack.white.bold(`\nJoin our discord server : https://discord.com/invite/M7sKda96GC \n`));
     }
     /**
      * Broadcasts a message to all members of a specified guild.
